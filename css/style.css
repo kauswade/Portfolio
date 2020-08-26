@@ -1,0 +1,37 @@
+footer {
+    background: #000000;
+    color: #ffffff;
+}
+
+.list-group-item {
+    background: #000000;
+}
+
+.list-group-item a {
+    color: #ffffff;
+}
+
+.footer-col {
+    align-items: center;
+}
+
+.projectImage {
+    width: inherit;
+}
+
+.projectRow div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.formBody {
+    
+}
+
+.contactForm {
+    
+}
