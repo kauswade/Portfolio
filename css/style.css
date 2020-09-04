@@ -1,3 +1,58 @@
+/* ---------------------------------------- navigation */
+.pageShow {
+    display: block;
+}
+.animateTop {
+    animation: ShowAnimationTop 0.5s;
+}
+.animateRight {
+    animation: ShowAnimationRight 0.5s;
+}
+.animateBottom {
+    animation: ShowAnimationBottom 0.5s;
+}
+.animateLeft {
+    animation: ShowAnimationLeft 0.5s !important;
+}
+
+.pageHide {
+    display: none !important;
+}
+
+@keyframes ShowAnimationTop {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+@keyframes ShowAnimationRight {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+@keyframes ShowAnimationBottom {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+@keyframes ShowAnimationLeft {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+/* ---------------------------------------- navigation end */
+
 footer {
     background: #000000;
     color: #ffffff;
@@ -29,9 +84,22 @@ footer {
 }
 
 .formBody {
-    
+    display: flex;
+    justify-content: center;
 }
 
 .contactForm {
-    
+    width: 700px;
+}
+
+@media only screen and (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
 }
